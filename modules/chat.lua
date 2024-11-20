@@ -430,7 +430,7 @@ pfUI:RegisterModule("chat", "vanilla:tbc", function ()
       end
 
       local _, class = UnitClass("player")
-      _G["ChatFrame" .. i .. "TabText"]:SetTextColor((RAID_CLASS_COLORS[class].r + .3) * .5, (RAID_CLASS_COLORS[class].g + .3) * .5, (RAID_CLASS_COLORS[class].b + .3) * .5, 1)
+      _G["ChatFrame" .. i .. "TabText"]:SetTextColor(1,1,1,1)
       _G["ChatFrame" .. i .. "TabText"]:SetFont(panelfont,panelfont_size, "OUTLINE")
 
       if _G["ChatFrame" .. i].isDocked or _G["ChatFrame" .. i]:IsVisible() then
@@ -648,7 +648,7 @@ pfUI:RegisterModule("chat", "vanilla:tbc", function ()
   for i,v in ipairs({ChatFrameEditBox:GetRegions()}) do
     if i==6 or i==7 or i==8 then v:Hide() end
     if v.SetFont then
-      v:SetFont(pfUI.font_default, C.global.font_size + 1, "OUTLINE")
+      v:SetFont(pfUI.font_default, C.global.font_unit_size + 1, "OUTLINE")
     end
   end
   ChatFrameEditBox:SetAltArrowKeyMode(false)

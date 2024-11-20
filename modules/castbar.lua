@@ -16,7 +16,7 @@ pfUI:RegisterModule("castbar", "vanilla:tbc", function ()
 
     -- icon
     cb.icon = CreateFrame("Frame", nil, cb)
-    cb.icon:SetPoint("TOPLEFT", 0, 0)
+    cb.icon:SetPoint("TOPLEFT", -20, 6)
     cb.icon:SetHeight(16)
     cb.icon:SetWidth(16)
 
@@ -40,7 +40,7 @@ pfUI:RegisterModule("castbar", "vanilla:tbc", function ()
     -- text left
     cb.bar.left = cb.bar:CreateFontString("Status", "DIALOG", "GameFontNormal")
     cb.bar.left:ClearAllPoints()
-    cb.bar.left:SetPoint("TOPLEFT", cb.bar, "TOPLEFT", 3, 0)
+    cb.bar.left:SetPoint("TOPLEFT", cb.bar, "TOPLEFT", -1, 32)
     cb.bar.left:SetPoint("BOTTOMRIGHT", cb.bar, "BOTTOMRIGHT", -3, 0)
     cb.bar.left:SetNonSpaceWrap(false)
     cb.bar.left:SetFontObject(GameFontWhite)
@@ -121,10 +121,10 @@ pfUI:RegisterModule("castbar", "vanilla:tbc", function ()
           if texture and this.showicon then
             local size = this:GetHeight()
             this.icon:Show()
-            this.icon:SetHeight(size)
-            this.icon:SetWidth(size)
+            this.icon:SetHeight(16)
+            this.icon:SetWidth(16)
             this.icon.texture:SetTexture(texture)
-            this.bar:SetPoint("TOPLEFT", this.icon, "TOPRIGHT", this.spacing, 0)
+            --this.bar:SetPoint("TOPLEFT", this.icon, "TOPRIGHT", this.spacing, 0)
           else
             this.bar:SetPoint("TOPLEFT", this, 0, 0)
             this.icon:Hide()

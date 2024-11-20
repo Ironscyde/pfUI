@@ -145,7 +145,7 @@ pfUI:RegisterModule("buffwatch", "vanilla:tbc", function ()
     this.bar:SetValue(remaining > 0 and remaining or 0)
 
     if ( this.tick or 1) > GetTime() then return else this.tick = GetTime() + .1 end
-    this.time:SetText(remaining > 0 and GetColoredTimeString(remaining) or "")
+    --this.time:SetText(remaining > 0 and GetColoredTimeString(remaining) or "")
   end
 
   local function StatusBarRefreshParent()
@@ -181,7 +181,7 @@ pfUI:RegisterModule("buffwatch", "vanilla:tbc", function ()
     frame.text:SetPoint("BOTTOMRIGHT", frame.bar, "BOTTOMRIGHT", -3, 0)
     frame.text:SetNonSpaceWrap(false)
     frame.text:SetFontObject(GameFontWhite)
-    frame.text:SetFont(font, C.global.font_size)
+    frame.text:SetFont(font, 10)
     frame.text:SetTextColor(textcolor.r,textcolor.g,textcolor.b,1)
     frame.text:SetJustifyH("LEFT")
 
