@@ -1,5 +1,5 @@
 ## Interface: 11200
-## Title: |cff33ffccpf|cffffffffUI|cffff3366-tweaked
+## Title: |cff33ffccpf|cffffffffUI |cff6e36d6-Ironsights-
 ## Author: Shagu
 ## Notes: A complete user interface replacement.
 ## Notes-ruRU: Полная замена пользовательского интерфейса.
