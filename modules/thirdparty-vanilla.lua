@@ -97,7 +97,7 @@ pfUI:RegisterModule("thirdparty-vanilla", "vanilla", function()
       end
 
       CreateBackdrop(KLHTM_Frame, nil, nil, (C.thirdparty.chatbg == "1" and .8))
-      CreateBackdropShadow(KLHTM_Frame)
+      --CreateBackdropShadow(KLHTM_Frame)
 
       if C.thirdparty.chatbg == "1" and C.chat.global.custombg == "1" then
         local r, g, b, a = strsplit(",", C.chat.global.background)
