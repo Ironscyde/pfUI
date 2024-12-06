@@ -632,28 +632,28 @@ pfUI:RegisterModule("panel", "vanilla:tbc", function()
   --CreateBackdropShadow(pfUI.panel.left)
   UpdateMovable(pfUI.panel.left)
 
-  pfUI.panel.left.hide = CreateFrame("Button", nil, pfUI.panel.left)
-  pfUI.panel.left.hide:SetFrameLevel(4)
-  pfUI.panel.left.hide:SetPoint("LEFT", pfUI.panel.left.backdrop, "LEFT", 0, 0)
-  pfUI.panel.left.hide:SetPoint("TOP", pfUI.panel.left.backdrop, "TOP", 0, 0)
-  pfUI.panel.left.hide:SetPoint("BOTTOM", pfUI.panel.left.backdrop, "BOTTOM", 0, 0)
-  pfUI.panel.left.hide:SetWidth(12)
+  -- pfUI.panel.left.hide = CreateFrame("Button", nil, pfUI.panel.left)
+  -- pfUI.panel.left.hide:SetFrameLevel(4)
+  -- pfUI.panel.left.hide:SetPoint("LEFT", pfUI.panel.left.backdrop, "LEFT", 0, 0)
+  -- pfUI.panel.left.hide:SetPoint("TOP", pfUI.panel.left.backdrop, "TOP", 0, 0)
+  -- pfUI.panel.left.hide:SetPoint("BOTTOM", pfUI.panel.left.backdrop, "BOTTOM", 0, 0)
+  -- pfUI.panel.left.hide:SetWidth(12)
 
-  pfUI.panel.left.hide:SetScript("OnClick", function()
-    if pfUI.chat.left:IsShown() then pfUI.chat.left:Hide() else pfUI.chat.left:Show() end
-  end)
+  -- pfUI.panel.left.hide:SetScript("OnClick", function()
+  --   if pfUI.chat.left:IsShown() then pfUI.chat.left:Hide() else pfUI.chat.left:Show() end
+  -- end)
 
-  if not pfUI.chat then pfUI.panel.left.hide:Hide() end
+  -- if not pfUI.chat then pfUI.panel.left.hide:Hide() end
 
-  SkinButton(pfUI.panel.left.hide)
-  pfUI.panel.left.hide:SetBackdropColor(0,0,0,0)
+  -- SkinButton(pfUI.panel.left.hide)
+  -- pfUI.panel.left.hide:SetBackdropColor(0,0,0,0)
 
-  pfUI.panel.left.hide.texture = pfUI.panel.left.hide:CreateTexture("pfPanelLeftHide")
-  pfUI.panel.left.hide.texture:SetTexture(pfUI.media["img:left"])
-  pfUI.panel.left.hide.texture:SetPoint("CENTER", 0, 0)
-  pfUI.panel.left.hide.texture:SetWidth(8)
-  pfUI.panel.left.hide.texture:SetHeight(8)
-  pfUI.panel.left.hide.texture:SetVertexColor(.25,.25,.25,1)
+  -- pfUI.panel.left.hide.texture = pfUI.panel.left.hide:CreateTexture("pfPanelLeftHide")
+  -- pfUI.panel.left.hide.texture:SetTexture(pfUI.media["img:left"])
+  -- pfUI.panel.left.hide.texture:SetPoint("CENTER", 0, 0)
+  -- pfUI.panel.left.hide.texture:SetWidth(8)
+  -- pfUI.panel.left.hide.texture:SetHeight(8)
+  -- pfUI.panel.left.hide.texture:SetVertexColor(.25,.25,.25,1)
 
   pfUI.panel.left.left = CreateFrame("Button", nil, pfUI.panel.left)
   pfUI.panel.left.left:SetFrameLevel(0)
